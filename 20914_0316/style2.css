@@ -1,0 +1,17 @@
+*{
+    background-color: black;
+    color : white;
+}
+
+h1{
+    color : red;
+}
+
+p{
+    font-family : 궁서;
+}
+
+table{
+    border-color : red;
+    border-width : 5px;
+}

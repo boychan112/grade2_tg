@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>상품선택</legend>
+            <ul>
+                <li>곰인형</li>
+                <li>사탕</li>
+                <li>초콜렛</li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li>서울</li>
+                <li>경기</li>
+                <li>인천</li>
+            </ul>
+        </fieldset>
+
+        <label>준수는<input type="text"></label>
+        <label for="user-id">준수는2</label>
+        <input type="text" id="user-id">
+    </form>
+
+    <form action="">
+        <label for="id">아이디 입력(6글자 이상) : </label>
+        <input type="text" id="id">
+
+        <label for="pw">비밀번호 입력 : </label>
+        <input type="password" id="pw">
+
+        <label>이메일 입력 : <input type="email"></label>
+
+        <label>전화번호 입력 : <input type="tel"></label>
+
+        <label>링크 입력 : <input type="url"></label>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li><label>이름 : <input type="text"></label></li>
+                <li><label>배송 주소 : <input type="text"></label></li>
+                <li><label>이메일 : <input type="email"></label></li>
+                <li><label>연락처 : <input type="tel"></label></li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>상품 선택</fieldset>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+        <label><input type="checkbox" name="order" value="s_3">선물용 3kg</label>
+        <label><input type="checkbox" name="order" value="s_5">선물용 5kg</label>
+        <label><input type="checkbox" name="order" value="f_3">가정용 3kg</label>
+        <label><input type="checkbox" name="order" value="f_5">가정용 5kg</label>
+        <p><b>포장 선택</b></p>
+        <label><input type="radio" name="gift" value="yes"> 선물 포장</label>
+        <label><input type="radio" name="gift" value="no"> 선물 포장 안 함</label>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

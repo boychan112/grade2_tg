@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>고객명 : <input type="text"></label> <br><br>
+        <label>전화번호 : <input type="tel"></label> <br><br>
+        <label>E-mail : <input type="email"></label> <br><br>
+        피자선택 : <select name="피자">
+            <option value="default">피자를 선택하세요</option>
+            <option value="1">치즈 퐁듀 파이어 미트</option>
+            <option value="2">블록버스터4</option>
+            <option value="3">글로벌 레전드4</option>
+            <option value="4">블랙앵거스 스테이크</option>
+            <option value="5">베스트 콰트로</option>
+            <option value="6">블랙타이거 슈림프</option>
+        </select>
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <label><input type="radio" name="size">Small</label> <br>
+            <label><input type="radio" name="size">Medium</label> <br>
+            <label><input type="radio" name="size">Large</label>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <label><input type="checkbox" name="토핑">베이컨</label>
+            <label><input type="checkbox" name="토핑">치즈</label>
+            <label><input type="checkbox" name="토핑">양파</label>
+            <label><input type="checkbox" name="토핑">버섯</label>
+        </fieldset>
+        <br>
+        희망배송시간 : <input type="time" name="희망배송시간"> <br><br>
+        배송시 요청사항 : <textarea></textarea> <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

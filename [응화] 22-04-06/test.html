@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+    <a href="#"><p onclick="alert('민혁이 병신')">클릭</p></a>
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름 </label>
+                    <input type="text" id="name" name="이름" placeholder="이름을 입력해주세요." autofocus required>
+                </li>
+
+                <li>
+                    <label for="addr">배송 주소 </label>
+                    <input type="text" id="addr" name="주소" placeholder="주소를 입력해주세요" required>
+                </li>
+
+                <li>
+                    <label for="em">이메일</label>
+                    <input type="email" id="em" name="이메일" placeholder="이메일을 입력해주세요" required>
+                </li>
+
+                <li>
+                    <label for="tel">연락처 </label>
+                    <input type="tel" id="tel" name="연락처" placeholder="연락처를 입력해주세요" required>
+                </li>
+
+                <li>
+                    <label><textarea cols="40" rows="5"></textarea></label>
+                </li>
+
+                <li> 성별
+                    <select name="성별">
+                        <option value="남">남성</option>
+                        <option value="여">여성</option>
+                    </select>
+                </li>
+            </ul>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <label><input type="checkbox" value="s_3" name="주문 상품">선물용 3kg</label>
+            <label><input type="checkbox" value="s_5" name="주문 상품">선물용 5kg</label>
+            <label><input type="checkbox" value="f_3" name="주문 상품">가정용 5kg</label>
+            <label><input type="checkbox" value="f_5" name="주문 상품">가정용 5kg</label>
+            <p><b>포장 선택</b></p>
+            <label><input type="radio" value="yes" name="포장 여부">선물 포장</label>
+            <label><input type="radio" value="no" name="포장 여부">선물 포장 안함</label>
+        </fieldset>
+        <br>
+        <input type="reset" value="초기화">
+        <input type="submit" value="확인 하던지 말던지">
+    </form>
+</body>
+</html>

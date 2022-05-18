@@ -1,0 +1,36 @@
+table,th,td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#container{
+    width: 600px;
+    border: none;
+}
+
+div{
+    border: 1px dashed #222;
+    padding: 20px;
+    margin: 20px;
+}
+
+.box1{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.box2{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.ccc{
+    background-color:rgb(238, 238, 238);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            border: 1px solid black;
+            width: 200px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #box1{
+            background-color: #ffd800;
+            width: 100px;
+            height: 30px;
+
+            float: left;
+        }
+        #box2{
+            background-color: #0094ff;
+            width: 100px;
+            height: 30px;
+
+            float: right;
+        }
+        #box3{
+            background-color: #00ff21;
+            width: 100px;
+            height: 30px;
+
+            clear: both; /* float의 영향을 받지 않게 해줌 */
+        }
+        #box4{
+            background-color: #a874ff;
+            width: 100px;
+            height: 30px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>menu 1</li>
+        <li>menu 2</li>
+        <li>menu 3</li>
+        <li>menu 4</li>
+        <li>menu 5</li>
+    </ul>
+
+    <div id="box1">박스1</div>
+    <div id="box2">박스2</div>
+    <div id="box3">박스3</div>
+    <div id="box4">박스4</div>
+</body>
+</html>

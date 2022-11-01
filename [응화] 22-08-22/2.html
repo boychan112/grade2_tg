@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header nav ul li a:link, header nav ul li a:visited{
+            color: black;
+            text-decoration: none;
+        }
+
+        header nav ul li  a:hover{
+            color: skyblue;
+
+            
+        }
+
+        header nav ul li:hover{
+            transform: scale(1.2);
+            transition: all 0.3s e  ase-in-out;
+        }
+
+        header nav ul li a:active{
+            color: skyblue;
+            border-bottom: 3px solid skyblue;
+        }
+
+        header nav ul li{
+            display: inline-block;
+            margin: 10px;
+            padding: 15px;
+            font-weight: bolder;
+        }
+
+        header nav{
+            border-bottom: 1px solid black;
+        }
+
+        /* #home:target{
+            background-color: aquamarine;
+        }
+            
+        #cate:target{
+            background-color:tomato;
+        }
+
+        #best:target{
+            background-color: blue;
+
+        }
+
+        #today:target{
+            background-color: blueviolet;
+        } */
+
+        li.new::after{
+            content: "New!";
+            font-size: x-small;
+            padding: 2px 4px;
+            margin: 0 10px;
+            border-radius: 50%;
+            background: coral;
+            color: white;
+        }
+
+        /* ---------------------------------------------- */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">스토어 홈</a></li>
+                <li><a href="#cate">카테고리</a></li>
+                <li class="new"><a href="#best">베스트</a></li>
+                <li class="new"><a href="#today">오늘의 딜</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home">
+        <!-- <h1>신상품 목록</h1>
+        <div id="container">
+            <ul class="prod-list">
+                <li>
+                    <img src="./E6yR7GLVUAMII0U.jpeg" alt="">
+                    <div class="caption">
+                        <h1>상품1</h1>
+                        <p>상품 1 설명 텍스트</p>
+                        <p>가격 : 12,345원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./E6yR7GLVUAMII0U.jpeg" alt="">
+                    <div class="caption">
+                        <h1>상품2</h1>
+                        <p>상품 2 설명 텍스트</p>
+                        <p>가격 : 12,345원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./E6yR7GLVUAMII0U.jpeg" alt="">
+                    <div class="caption">
+                        <h1>상품3</h1>
+                        <p>상품 3 설명 텍스트</p>
+                        <p>가격 : 12,345원</p>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div id="cate">
+        <h2>카테고리</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ullam corporis enim asperiores molestiae aliquam. Suscipit ex officiis atque nihil, ipsum placeat pariatur, vero itaque iusto autem adipisci cupiditate debitis.</p>
+    </div>
+
+    <div id="best">
+        <h2>베스트</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, vitae. Nemo a, quisquam asperiores ipsa quos obcaecati distinctio facere aperiam, accusantium debitis illum nulla quidem facilis repellendus laborum voluptas quod?</p>
+    </div>
+
+    <div id="today">
+        <h2>오늘의 딜</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis voluptatibus sed blanditiis. Vel necessitatibus, id ad, officiis veniam voluptates fuga ullam impedit pariatur earum debitis, dolores sit tenetur perspiciatis? Temporibus?</p>
+    </div>
+</body>
+</html>

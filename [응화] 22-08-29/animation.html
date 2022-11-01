@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            border: 1px solid transparent/*(투명색)*/;
+            animation-name: shape; /* 애니메이션 이름 */
+            animation-duration: 3s; /* 3초동안 애니메이션 진행 */
+            animation: shape 3s infinite/* 무한으로 반복 */;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            border: 1px solid transparent;
+            animation: rotate;
+            animation-duration: 3s; 
+            animation: rotate 3s alternate infinite;
+        }
+
+        @keyframes shape{
+            from{
+                border: 1px solid transparent;
+            } /* 처음의 모습 */
+
+            50%{
+                transform: rotate(45deg);
+            }/* 중간의 모습 */
+
+            to{
+                border: 1px solid black;
+                border-radius: 50%;
+            } /* 결과의 모습 */
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

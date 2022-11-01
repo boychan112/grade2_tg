@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+        }
+
+    </style>    
+</head>
+<body>
+    <script>
+        // *******************************출력할때 줄바꿈 넣기******************************
+        
+        // let x = 0;
+        // let season = ['봄','여름','가을','겨울'];
+        // for(let i=0; i<4; i++){
+        //     document.write(season[i]);
+        //     document.write('<br>');
+        // }
+
+        // *****************************나이 계산기********************************
+
+        // let birth = prompt("당신이 태어난 연도를 입력하세요");
+        // age = 2022 - birth + 1;
+        // document.write('당신의 현재 나이는 <b>' + age + '</b>살 입니다.');
+
+        // ******************************3의 배수인지 검사하기*******************************
+
+        // let x = prompt("숫자를 입력하세요");
+        // if(x>0){
+        //     if(x % 3 === 0){
+        //     alert("3의 배수입니다");
+        //     }
+        //     else{
+        //     alert("3의 배수가 아닙니다");
+        //     }
+        // }
+        // else{
+        //     alert("값을 다시 입력하세요.");
+        // }
+
+        // ******************************for문*******************************
+
+        // let sum=0;
+        // for(let i=0; i<=10;i++){
+        //     sum+=i;
+        // }
+        // alert("결과는 "+sum+"입니다");
+
+        // *****************************while문********************************
+
+        // let sum=0;
+        // let i=0;
+
+        // while(i==10){
+        //     sum += i;
+        //     i++;
+        // }
+        // alert(sum);
+
+        // *****************************약수 구하기********************************
+
+        // let x = prompt("숫자를 입력하시오");
+        // for(let i=0; i<x+1; i++){
+        //     if(x%i===0){
+        //         document.write(i+"<br>");
+        //     }
+        //     else{
+        //         continue;
+        //     }
+        // }
+
+        // *****************************구구단 문제*******************************
+
+        document.write("<h1>구구단</h1><br>");
+        document.write("<div class='border'>");
+        document.write("<h3>1단</h3>");
+        for(let i=1; i<10; i++){
+            document.write("1 X " + i + " = " + 1 * i+"<br>");
+        }
+        document("</div>");
+
+        document.write("<h3>2단</h3>");
+        for(let i=1; i<10; i++){
+            document.write("2 X " + i + " = " + 2 * i+"<br>");
+        }
+
+        document.write("<h3>3단</h3>");
+        for(let i=1; i<4; i++){
+            document.write("3 X " + i + " = " + 3 * i+"<br>");
+        }
+        // *************************************************************
+        // *************************************************************
+        // *************************************************************
+    </script>
+</body>
+</html>

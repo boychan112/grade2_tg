@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* border: 1px solid black; */
+}
+
+#container{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+header{
+    width: 1200px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* 세로 가운데 정렬 */
+}
+
+header ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li{
+    width: 25%;
+    text-align: center;
+    height: 80px;
+}
+
+header ul li a{
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+header ul li:hover a{
+    background-color: #222;
+}
+
+.slide ul{
+    width: 1200px;
+    height: 300px;
+
+    display: flex;
+    overflow: hidden;
+}
+
+.slide ul li{
+    width: 1200px;
+    height: 300px;
+    animation: slide 6s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0px);
+    }
+
+    33%{
+        transform: translateX(-1200px);
+    }
+
+    66%{
+        transform: translateX(-2400px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.contents{
+    width: 1200px;
+    height: 200px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contents h2{
+    font-size: 1.1rem;
+    width: 100px;
+    text-align: center;
+    font-weight: 550;
+}
+
+.contents ul, h2{
+    border: 1px solid #ccc;
+}
+
+.contents .notice span.date{
+    float: right;
+}
+
+.contents .notice ul li{
+    border-bottom: 1px solid #ccc;
+}
+
+.contents .notice ul li:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.gallery ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery ul li{
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer{
+    width: 1200px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+

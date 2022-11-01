@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header nav ul li a:link, header nav ul li a:visited{
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    header nav ul li a:hover{
+        color: skyblue;
+    }
+
+    header nav ul li:hover{
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+
+    header nav ul li a:active{
+        color: skyblue;
+        border-bottom: 3px solid skyblue;
+    }
+
+    header nav ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+    header nav ul li{
+        display: inline-block;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    header nav ul img{  
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    header nav{
+        border-bottom: 2px solid #ccc;
+    }
+
+    #cate:target{
+        background-color: aqua;
+    }
+
+    #best:target{
+        background-color: coral;
+    }
+
+    #today:target{
+        background-color: pink;
+    }
+
+    header nav ul li a.new::after{
+        content: "new!!";
+        font-size: x-small;
+        margin: 5px;
+        padding: 3px;
+        background-color: coral;
+        border-radius: 50%;
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./googl.png" alt=""></li>
+                <li><a href="#home">스토어 홈</a></li>
+                <li><a href="#cate">카테고리</a></li>
+                <li><a href="#best" class="new">베스트</a></li>
+                <li><a href="#today" class="new">오늘의 딜</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home">
+        <h2>스토어 홈</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, itaque accusamus ea voluptates cumque aut sed voluptatibus aperiam quis doloribus. Nihil modi cumque magnam blanditiis, repudiandae molestiae recusandae consequuntur quidem.</p>
+    </div>
+
+    <div id="cate">
+        <h2>카테고리</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, itaque accusamus ea voluptates cumque aut sed voluptatibus aperiam quis doloribus. Nihil modi cumque magnam blanditiis, repudiandae molestiae recusandae consequuntur quidem.</p>
+    </div>
+
+    <div id="best">
+        <h2>베스트</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, itaque accusamus ea voluptates cumque aut sed voluptatibus aperiam quis doloribus. Nihil modi cumque magnam blanditiis, repudiandae molestiae recusandae consequuntur quidem.</p>
+    </div>
+
+    <div id="today">
+        <h2>오늘의 딜</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, itaque accusamus ea voluptates cumque aut sed voluptatibus aperiam quis doloribus. Nihil modi cumque magnam blanditiis, repudiandae molestiae recusandae consequuntur quidem.</p>
+    </div>
+</body>
+</html>
